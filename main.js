@@ -30,7 +30,7 @@ $(document).ready(function() {
   $("#cb-pnum").change(function() {
     $("#onum-pnum").toggleClass("pnum-on", this.checked);
   });
-  
+
   //click to top
   $("#up").click(function() {
     $('html, body').animate({ scrollTop: 0 }, 'slow');
