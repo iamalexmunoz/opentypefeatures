@@ -51,9 +51,16 @@ hr {
 }
 
 .wrapper {
-    width: 1000px;
-    margin: 0 auto;
-    position: relative;
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 1000px) {
+    .wrapper {
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        width: 1000px;
+    }
 }
 
 .sidebar {
@@ -92,11 +99,11 @@ label.checkbox-label input[type=checkbox]{
     bottom: 1px;
 }
 
-h1 {
+h1, .t-h1 {
     text-shadow: 1px 1px 0px #fff;
 }
 
-h2 {
+.subtitle {
     font-size: 80px;
     line-height: 70px;
     margin: 0 0 40px 0;
