@@ -1,12 +1,13 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alex Mu&ntilde;oz - Opentype Features</title>
         <link rel="stylesheet" type="text/css" href="estils.css">
     </head>
-
     <body>
-        <div id="wrap">
+        <div id="main" class="wrapper">
             <h1>OpenType features in webfonts</h1>
             <h2>Source Sans Pro Regular</h2>
 
@@ -14,11 +15,11 @@
 
             <div class="sidebar">
                 <div class="info">
-                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox" id="cb-liga"><span>Standard ligatures</span> (liga)</label>
+                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox js-checkbox" id="cb-liga"><span>Standard ligatures</span> (liga)</label>
                     <p>This feature replaces a sequence of glyphs with a single glyph, called a ligature, which is preferred for typographic purposes. When enabled, this feature inserts the ligatures which the designer/manufacturer judges should be used in normal conditions.</p>
                 </div>
             </div>
-            <div id="liga" class="content">
+            <div id="liga" class="content liga">
                 <h3>Soft Affaires</h3>
                 <h4>Victory for affordable housing as court throws out 'insane' government policy. A citizen's guide to craft the living.</h4>
                 <p class="col-1">
@@ -33,15 +34,15 @@
 
             <div class="sidebar">
                 <div class="info">
-                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox" id="cb-smcp"><span>Small caps</span> (smcp)</label>
+                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox js-checkbox" id="cb-smcp"><span>Small caps</span> (smcp)</label>
                     <p>This feature turns lowercase characters into small capitals.</p>
                 </div>
             </div>
-            <div class="content">
+            <div class="content smcp">
                 <h5>Alice in Wonderland</h5>
-                <h3 id="smcp">I - Down the Rabbit hole</h3>
+                <h3>I - Down the Rabbit hole</h3>
                 <p>
-                <span id="smcp-text">Alice was beginning to get very tired of sitting by her sister on the bank,</span>
+                <span>Alice was beginning to get very tired of sitting by her sister on the bank,</span>
                     and of having nothing to do. Once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, "and what is the use of a book," thought Alice, "without pictures or conversations?"
                     <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;So she was considering in her own mind (as well as she could, for the day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.
@@ -52,11 +53,11 @@
 
             <div class="sidebar">
                 <div class="info">
-                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox" id="cb-salt"><span>Stylistic alternates</span> (salt)</label>
+                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox js-checkbox" id="cb-salt"><span>Stylistic alternates</span> (salt)</label>
                     <p>This feature replaces default character glyphs with stylistic alternates.</p>
                 </div>
             </div>
-            <div id="salt" class="content">
+            <div class="content salt">
                 <h3>Prague holidays</h3>
                 <h4>Fink's Fin Greenall on culture, festivals and heartbreak in Prague</h4>
                 <p class="col-1">
@@ -71,13 +72,13 @@
 
             <div class="sidebar">
                 <div class="info">
-                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox" id="cb-frac"><span>Fractions</span> (frac)</label>
+                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox js-checkbox" id="cb-frac"><span>Fractions</span> (frac)</label>
                     <p>This feature replaces figures separated by a slash with common (diagonal) fractions.</p>
                 </div>
             </div>
-            <div class="content">
+            <div class="content frac">
                 <h3>Healthy dinner cupcakes</h3>
-                <ul id="frac" class="col-1">
+                <ul class="col-1">
                     <li>Cupcake pan</li>
                     <li>Vegetable oil</li>
                     <li>Medium mixing bowl</li>
@@ -110,7 +111,7 @@
 
             <div class="sidebar">
                 <div class="info">
-                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox" id="cb-sups"><span>Superscript</span> (sups)</label>
+                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox js-checkbox" id="cb-sups"><span>Superscript</span> (sups)</label>
                     <p>This feature replaces lining or oldstyle figures with superior figures (primarily for footnote indication), and replaces lowercase letters with superior letters (primarily for abbreviated French titles).</p>
                 </div>
             </div>
@@ -126,13 +127,13 @@
 
             <div class="sidebar">
                 <div class="info">
-                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox" id="cb-subs"><span>Subscript</span> (subs)</label>
+                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox js-checkbox" id="cb-subs"><span>Subscript</span> (subs)</label>
                     <p>This feature may replace a default glyph with a subscript glyph, or it may combine a glyph substitution with positioning adjustments for proper placement.</p>
                 </div>
             </div>
             <div class="content">
-                <h3 class="subs">&Omega;3</h3>
-                <h4 class="subs">The molecular formula for glucose is C6H12O6</h4>
+                <h3>&Omega;<span class="subs">3</span></h3>
+                <h4>The molecular formula for glucose is C<span class="subs">6</span>H<span class="subs">12</span>O<span class="subs">6</span></h4>
                 <p>
                     Meaning that it is a molecule with 6 carbon atoms, 12 hydrogen atoms and 6 oxygen atoms
                 </p>
@@ -142,13 +143,21 @@
 
             <div class="sidebar">
                 <div class="info">
-                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox" id="cb-lnum"><span>Lineal numerals</span> (lnum)</label>
-                    <p>This feature changes numeral glyphs from default or oldstyle figures to lining figures. <b>Note that some fonts may contain lining figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.</b></p>
-                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox" id="cb-tnum"><span>Tabular numbers</span> (tnum)</label>
-                    <p>This feature replaces numeral glyphs set on glyph-specific (proportional) widths with corresponding glyphs set on uniform (tabular) widths. Note that some fonts may contain tabular figures by default, in which case enabling this feature may not appear to affect the width of glyphs.</p>
+                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox js-checkbox" id="cb-lnum"><span>Lineal numerals</span> (lnum)</label>
+                    <p>
+                        This feature changes numeral glyphs from default or oldstyle figures to lining figures.
+                        <br><br>
+                        <b>Note that some fonts may contain lining figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.</b>
+                    </p>
+                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox js-checkbox" id="cb-tnum"><span>Tabular numbers</span> (tnum)</label>
+                    <p>
+                        This feature replaces numeral glyphs set on glyph-specific (proportional) widths with corresponding glyphs set on uniform (tabular) widths.
+                        <br><br>
+                        <b>Note that some fonts may contain tabular figures by default, in which case enabling this feature may not appear to affect the width of glyphs.</b>
+                    </p>
                 </div>
             </div>
-            <div id="lnum-tnum"class="content">
+            <div class="content lnum tnum">
                 <h3>The Brewery 360</h3>
                 <h4>Trail Head Pale Ale has donated 30,875&euro; to the Cleveland Metroparks trails fund. Cavalier, the distributor for Fat Head's, contributed 10,950&euro; of that amount.</h4>
                 <ul class="col-1">
@@ -169,13 +178,13 @@
 
             <div class="sidebar">
                 <div class="info">
-                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox" id="cb-onum"><span>Oldstyle numbers</span> (onum)</label>
+                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox js-checkbox" id="cb-onum"><span>Oldstyle numbers</span> (onum)</label>
                     <p>This feature changes numeral glyphs from default or lining figures to oldstyle figures. Note that some fonts may contain oldstyle figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.</p>
-                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox" id="cb-pnum"><span>Proportional figures</span> (pnum)</label>
+                    <label class="checkbox-label"><input type="checkbox" name="switch" class="checkbox js-checkbox" id="cb-pnum"><span>Proportional figures</span> (pnum)</label>
                     <p>This feature replaces numeral glyphs set on uniform (tabular) widths with corresponding glyphs set on glyph-specific (proportional) widths. <b>Note that some fonts may contain proportional figures by default, in which case enabling this feature may not appear to affect the width of glyphs.</b></p>
                 </div>
             </div>
-            <div id="onum-pnum"class="content">
+            <div class="onum pnum content">
                 <h3>The Brewery 360</h3>
                 <h4>Trail Head Pale Ale has donated 30,875&euro; to the Cleveland Metroparks trails fund. Cavalier, the distributor for Fat Head's, contributed 10,950&euro; of that amount.</h4>
                 <ul class="col-1">
@@ -306,10 +315,9 @@
 
             <hr>
             <p id="name">Alex Mu&ntilde;oz Papaseit   &mdash;   IDEP 2015.</p>
-            <p id="up">&uarr;</p>
+            <p><a href="#main" role="button" class="fr">&uarr;</a></p>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
