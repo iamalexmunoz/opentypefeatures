@@ -1,3 +1,12 @@
+.font-arial * {         font-family: Arial,"Helvetica Neue",Helvetica,sans-serif }
+.font-source-sans * {   font-family: 'Source Sans Pro',verdana,monospace; }
+.font-tahoma * {        font-family: Tahoma,Verdana,Segoe,sans-serif; }
+.font-trebuchet * {     font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif; }
+.font-verdana * {       font-family: Verdana,Geneva,sans-serif; }
+.font-georgia * {       font-family: Georgia,Times,"Times New Roman",serif; }
+.font-palatino * {      font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif; }
+.font-times * {         font-family: TimesNewRoman,"Times New Roman",Times,Baskerville,Georgia,serif; }
+.font-courier-new * {   font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace; }
 
 /*
  *Source Sans Pro Fonts
@@ -30,7 +39,7 @@
 html {  scroll-behavior: smooth; }
 
 body {
-    font-family: 'Source Sans Pro', verdana, monospace;
+    font-family: monospace;
     font-variant-ligatures: no-common-ligatures;
     -moz-font-feature-settings: "liga" 0, "clig" 0;
     -webkit-font-feature-settings: "liga" 0, "clig" 0;
