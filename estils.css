@@ -20,6 +20,15 @@
  *Estils
  */
 
+* {
+    font-variant-numeric: inherit;
+    -moz-font-feature-settings: inherit;
+    -webkit-font-feature-settings: inherit;
+    font-feature-settings: inherit;
+}
+
+html {  scroll-behavior: smooth; }
+
 body {
     font-family: 'Source Sans Pro', verdana, monospace;
     font-variant-ligatures: no-common-ligatures;
@@ -41,7 +50,7 @@ hr {
     clear: both;
 }
 
-#wrap {
+.wrapper {
     width: 1000px;
     margin: 0 auto;
     position: relative;
@@ -196,7 +205,7 @@ font-feature-settings: "pnum";
 .col-1 li {
     font-size: 20px;
     line-height: 20px;
-    margin: 0 0 10px 0;    
+    margin: 0 0 10px 0;
 }
 
 ol li {
@@ -234,11 +243,6 @@ a:visited {
 
 #name {
     float: left;
-}
-
-#up {
-    cursor: pointer;
-    float: right
 }
 
 /*
@@ -340,7 +344,7 @@ table tr:last-child td:last-child {
 table tr:hover td {
 	background: #f2f2f2;
 	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
-	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);
 }
 */
 
