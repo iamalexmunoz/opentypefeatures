@@ -1,5 +1,9 @@
 (function(){
   'use strict';
+
+  /**
+   * Trigger Features
+   */
   var CHECKBOX_CLASS = 'js-checkbox';
   var checkboxes = document.querySelectorAll("." + CHECKBOX_CLASS);
 
@@ -16,5 +20,22 @@
       });
     });
   });
+
+  /**
+   * Trigger Font Families
+   */
+
+  var FF_RADIOS = document.querySelectorAll('input[type="radio"][name="fontfamily"]');
+  var FF_NAME = document.querySelector('.js-font-name');
+
+  FF_RADIOS.forEach(function(radio) {
+    radio.addEventListener('change', function(selector) {
+      var fontFamily = selector.target.value;
+      document.documentElement.classList = '';
+      document.documentElement.classList.add('font-' + fontFamily);
+      FF_NAME.textContent = fontFamily.toUpperCase();
+    });
+  });
+
 })();
 
